@@ -23,9 +23,17 @@ package com.mycompany.casitasrurales;
  *
  * @author elses
  */
+import java.io.IOException;
+import java.util.*;
+import java.util.ArrayList;
 public class Main {
-
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+    
+    public static void main(String []args){
+        Scanner input=new Scanner(System.in);
+        
+        
+    
     }
-}
+    
+    }
+
