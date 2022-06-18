@@ -30,9 +30,49 @@ public class Main {
     
     public static void main(String []args){
         Scanner input=new Scanner(System.in);
+        int n=2;
+        int opcion; 
+        presentacion();
+        do{
+            opciones();
+            opcion= input.nextInt();
+            input.nextLine();
+            switch(opcion){
+                case 1: 
+                break;
+                case 2: 
+                break;
+                case 3: 
+                break;
+                case 4: 
+                    n=3;
+                    System.out.println("Gracias por usarnos");
+                break;
+                default:
+                    System.out.println("eleccion fuera de rango");
+            }
+            
         
+        
+        
+        
+        }
+        
+        while(n==2);
         
     
+    }
+    
+    public static void presentacion(){
+        System.out.println("########################################################");
+        System.out.println("Bienvenido a la base de datos de La Alcarria");
+    }
+    public static void opciones(){
+    
+        System.out.println("1: Ingresar");
+        System.out.println("2: Eliminar");
+        System.out.println("3: Mostrar");
+        System.out.println("4: Cerrar el programa");
     }
     
     }

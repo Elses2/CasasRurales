@@ -1,9 +1,6 @@
 package com.mycompany.casitasrurales;
 
-/**
- *
- * @author elses
- */
+///Esta clase son los objetos que se almacenaran
 public class Casas {
     
     private String codigo;
