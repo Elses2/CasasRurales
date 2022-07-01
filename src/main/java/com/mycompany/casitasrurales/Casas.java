@@ -45,7 +45,7 @@ esAlta = false;
     @Override
     public String toString(){
 
-        return "";
+        return "Casa Rural " + codigo +"\n"+"Población: " + poblacion+"Dirección: " + direccion+"Precio por día: " + precio;
 
 
 }
