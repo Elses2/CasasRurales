@@ -1,8 +1,10 @@
 package com.mycompany.casitasrurales;
 
 ///Esta clase son los objetos que se almacenaran
+import java.util.*;
 public class Casas {
     
+    Scanner entrada=new Scanner(System.in);
     private String codigo;
     private String poblacion;
     private String direccion;
@@ -10,17 +12,35 @@ public class Casas {
     private double precio = 0.0;
     private boolean esAlta;
     
-    public Casas(String codigo,String poblacion, String direccion, int numHabitacion,double precio){
+    public Casas(){
     esAlta=true;
-    this.codigo=codigo;
-    this.poblacion=poblacion;
-    this.direccion=direccion;
-    this.numHabitacion =numHabitacion;
-    this.precio = precio;
+    asigna();
     
     
     }
     
+    public void asigna()
+{
+
+try {
+System.out.print("\n Codigo (10 caracteres): ");
+codigo = entrada.nextLine();
+System.out.print("\n Población: ");
+poblacion = entrada.nextLine();
+System.out.print("\n Dirección: ");
+direccion = entrada.nextLine();
+System.out.print("\n Número de habitaciones: ");
+numHabitacion = Integer.parseInt(entrada.nextLine());
+System.out.print("\n Precio por día de estancia: ");
+precio = (new Double(entrada.nextLine())).doubleValue();
+}
+catch (Exception e)
+{
+System.out.println(" Excepcion en la entrada de datos " +
+e.getMessage()+ " . No se da de alta");
+esAlta = false;
+}
+}
     
     @Override
     public String toString(){
